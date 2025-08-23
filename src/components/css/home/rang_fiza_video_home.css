@@ -1,0 +1,110 @@
+.body {
+    font-family: 'Crimson Text';
+}
+.container_1{
+    background-color: #F3F1E4;
+    margin: auto;
+    /*   */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    gap:20px;
+
+}
+.video-box{
+    position: relative;
+    display:block;
+    /* display: block; */
+    width:100%;
+    /* height:607px; */
+    /* gap:20px; */
+    background-color: #ffffff;
+    /* padding:20px; */
+    align-content: center;
+}
+/* .image-wrapper {
+    position:relative;
+    display:block;
+    /* height:607px; 
+} */
+
+.video-image{
+    width:100%;
+    position: relative;
+    /* height:607px;
+    object-fit: cover;*/
+    display:block; 
+}
+.image-wrapper::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:150px;
+    background: linear-gradient(to bottom,transparent,#622B1E);
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index:1;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index:1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+.text-head{
+    font-weight: 700;
+    font-size: 48px;
+}
+.text-below{
+    font-size: 32px;
+}
+@media (max-width:768px){
+    .container_1 {
+        flex-direction:column;
+        padding:20px 0;
+    }
+    .image-wrapper,.video-box,.video-image {
+        width:100%;
+        height:auto;
+    }
+    .video-box {
+        flex-direction: column;
+        gap:10px;
+        background-color: #F3F1E4;
+        align-items: center;
+    }
+    .video-image{
+        object-fit: cover;
+    }
+    .play-button {
+        width:50px;
+        height:50px;
+    }
+    .text-overlay {
+        bottom:10px;
+        left:10px;
+        padding:6px 12px;
+    }
+        .text-head {
+        font-size: 28px;
+    }
+
+    .text-below {
+        font-size: 16px;
+    }
+}

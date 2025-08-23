@@ -1,0 +1,55 @@
+import React from 'react';
+import '../../css/home/shop_craft_home.css'
+function Shop_craft() {
+    return (
+<div className="product-section">
+    <h2 className="section-heading">Shop by Craft</h2>
+
+    <div className="product-grid">
+        <div className="product-item">
+            <img src="assets/picture/ajrakh_img_1.png" alt="Item 1" className="product-image" />
+            <div className="product-info">
+                <h3 className="product-heading">Ajrakh Kurtas</h3>
+                <p className="product-description">Master Artisans from Gujrat</p>
+                <button className="product-button">Shop Now <img src='assets/logo/Vector.svg'/></button>
+            </div>
+        </div>
+
+        <div className="product-item">
+            <img src="assets/picture/bagh_printed_img_2.png" alt="Item 2" className="product-image" />
+            <div className="product-info">
+                <h3 className="product-heading">Bag Printed Kurtas</h3>
+                <p className="product-description">Master artisans from Gujrat</p>
+                <button className="product-button">Shop Now <img src='assets/logo/Vector.svg'/></button>
+            </div>
+        </div>
+
+        <div className="product-item">
+            <img src="assets/picture/katha_img_3.png" alt="Item 3" className="product-image" />
+            <div className="product-info">
+                <h3 className="product-heading">Katha Collection</h3>
+                <p className="product-description">Rural artisans from West Bengal</p>
+                <button className="product-button">Shop Now <img src='assets/logo/Vector.svg'/></button>
+            </div>
+        </div>
+
+        <div className="product-item">
+            <img src="assets/picture/sanganeri_image_4.png" alt="Item 4" className="product-image" />
+            <div className="product-info">
+                <h3 className="product-heading">Sanganeri Collection</h3>
+                <p className="product-description">Master artisans from Gujrat</p>
+                <button className="product-button">Shop Now <img src='assets/logo/Vector.svg'/></button>
+            </div>
+        </div>
+    </div>
+
+    <div className="view-all-button-container">
+        <button className="view-all-button">View All Products <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.33333 3L1.9375 10.4167C1.77083 10.5833 1.57278 10.6667 1.34333 10.6667C1.11389 10.6667 0.916111 10.5833 0.75 10.4167C0.583333 10.25 0.5 10.0519 0.5 9.8225C0.5 9.59305 0.583333 9.39528 0.75 9.22917L8.16667 1.83333H1.83333C1.59722 1.83333 1.39917 1.75333 1.23917 1.59333C1.07917 1.43333 0.999444 1.23556 1 1C1 0.763889 1.08 0.565834 1.24 0.405834C1.4 0.245834 1.59778 0.166111 1.83333 0.166667H10.1667C10.4028 0.166667 10.6008 0.246667 10.7608 0.406667C10.9208 0.566667 11.0006 0.764445 11 1V9.33333C11 9.56944 10.92 9.7675 10.76 9.9275C10.6 10.0875 10.4022 10.1672 10.1667 10.1667C9.93056 10.1667 9.7325 10.0867 9.5725 9.92667C9.4125 9.76667 9.33278 9.56889 9.33333 9.33333V3Z" fill="#ffffff"/>
+</svg></button>
+    </div>
+</div>
+
+    );
+}
+export default Shop_craft;

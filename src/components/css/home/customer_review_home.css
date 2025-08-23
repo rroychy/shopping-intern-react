@@ -1,0 +1,132 @@
+/* .wrapper {
+    display:flex;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    overflow-x: auto;
+} */
+
+
+.review-heading  {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;}
+
+
+.review-container {
+    /* padding: 0px 20px; */
+    background-color: #F3F1E4;
+    margin: auto;
+    overflow: hidden;
+    /* max-width: 1900px; */
+    /* width: 100vw; */
+}
+.review-list {
+    /* padding-left: 20px;
+    padding-right: 20px;*/
+    /* justify-content: center; 
+    display: flex;
+    flex-wrap: wrap; */
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2px;
+    padding-bottom: 50px;
+    gap: 30px;
+    align-items: center;
+}
+.review-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly;
+    width:700px;
+    height: auto; */
+    gap:20px;
+    align-items: center;
+    background-color: #ffffff;
+    padding:20px;
+}
+.left-image{
+    /* grid-area: 1 / 1 / 2 / 2; */
+    width:50%;
+    /* height:75%; */
+}
+.left-image img{
+    width:100%; 
+    display: block;
+    object-fit: cover;
+    border-radius: 0px;
+}
+.icon-star{
+    gap: 4px;
+    margin-bottom: 10px;
+}
+.icon-star img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+.right-text {
+    /* grid-area: 1 / 2 / 2 / 3; */
+    width:50%;
+    flex:1;   
+    text-align: left;
+}
+.review-text-head {
+    font-weight: 600;
+    font-size: 24px;
+
+}
+.review-text-main {
+    font-weight: 400;
+    font-size: 20px;
+}
+.review-divider {
+    border-top: 1px solid #D9D9D9;
+    width: 100%;
+    margin:12px 0;
+}
+
+.review-name{
+    font-size: 24px;
+}
+.review-place{
+    font-size: 20px;
+}
+@media (max-width:768px){
+    .review-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap:20px;
+        padding-bottom:30px;
+    }
+    .review-heading {
+        font-size: clamp(14px,4vw,32px);
+    }
+    .review-box {
+        flex-direction:column;
+        /* width:90%;
+        height:auto; */
+        padding:15px;
+    }
+    .left-image{
+    width:100%;
+}
+    .left-image img {
+        width: 100%;
+    }
+    .review-text-head,.review-name{
+        font-size: 20px;
+    }
+    .review-text-main,.review-place{
+        font-size: 16px;
+    }
+    .icon-star{
+        text-align: center;
+    }
+    .icon-star img{
+        width:24px;
+        height:24px;
+    }
+}

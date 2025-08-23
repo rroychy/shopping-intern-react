@@ -1,0 +1,102 @@
+.body{
+    font-family: 'Microsoft Sans Serif',sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f1e4;
+}
+.login-form {
+    padding:30px;
+    width:320px;
+}
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px ;
+    font-weight:600;
+    text-align:center;
+}
+.login-form label {
+    display:block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color:#333;
+}
+.login-input {
+    width:100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border:1px solid #555;
+    background-color: #f3f1e4;
+    border-radius:0;
+    font-size: 15px;
+    outline:none;
+}
+.forgot-password {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.forgot-password a {
+    text-decoration: underline;
+    font-size: 14px;
+    color:#622b1e;
+    cursor:pointer;
+}
+.forgot-password a:hover {
+    color:#481f15;
+}
+.login-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #622B1E;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #481f15;
+}
+.login-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px){
+    /* .container {
+        height: 50vh;
+    } */
+    .login-form {
+        padding:10px;
+    }
+    .login-form h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        text-align:center;
+        padding:0px;
+    }
+    .login-form label {
+        display:block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color:#333;
+    }
+    .login-input {
+        width:100%;
+        padding:5px;
+        margin-bottom:12px;
+    }
+    .login-button {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+}

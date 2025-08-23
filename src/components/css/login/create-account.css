@@ -1,0 +1,70 @@
+.body{
+    font-style:'Microsoft Sans Serif',sans-serif ;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f1e4;
+}
+.create-account {
+    /* background-color: #f3f1e4; */
+    padding:30px;
+    width: 320px;
+}
+.create-account h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight:600;
+    text-align: left;
+    padding:0px; 
+}
+.create-account-input {
+    width:100%;
+    padding:10px;
+    margin-bottom: 15px;
+    border:1px solid #555;
+    background-color: #f3f1e4;
+    border-radius: 0;
+    font-size:15px;
+    outline:none;
+}
+.create-account-button {
+
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color: #622b1e;
+    color:white;
+    border:none;
+    padding:16px 32px;
+    cursor:pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+.create-account-button:hover {
+    background-color: #622b1e;
+}
+@media (max-width: 768px){
+    .create-account {
+        padding:10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .create-account h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        text-align:center;
+        padding:0px;
+    }
+    .create-account-input {
+        width:100%;
+        padding:5px;
+        margin-bottom:12px;
+    }
+    .create-account-button {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+}

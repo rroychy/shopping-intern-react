@@ -1,0 +1,105 @@
+
+.form-background-container {
+    background-color: #f3f1e4;
+}
+.form-group {
+    grid-column: span 2;
+}
+@media (min-width:769px){
+    
+    .form-group:nth-child(1) , .form-group:nth-child(2) {
+    grid-column: span 1;
+}
+
+}
+.contact-heading h1 {
+    margin:0 0;
+    display:block;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+}
+.form-row {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.form-input-textbox-name,.form-input-textbox-email,.form-input-textbox-phone,.form-input-textbox-comment  {
+    box-sizing:border-box;
+    border-radius: 0;
+    width:343px;
+    height:30px;
+    padding:20px;
+    display:flex;
+    font-family: 'Microsoft Sans Serif',sans-serif;
+    font-size:15px;
+    color:#333;
+    background-color: #F3F1E4;
+    border: 1px solid #5e5d5d;
+    box-shadow:none;
+    outline:none;
+}
+.form-input-textbox-comment {
+        height:100px;}
+.submit-button {
+        padding: 0px 0px;
+        width:120px;
+        height:45px;
+        background-color: #622B1E;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+    .submit-button:hover {
+        background-color: #451F15;
+}
+/* Mobile View */
+@media (max-width:768px)
+{
+    .form-group {
+        display: flex;
+        flex-direction:column;
+        margin-bottom:1rem;
+    }
+    .form-row {
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        align-items: flex-start;
+        max-width: 800px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-top: 80px;
+        padding-left: 20px;
+    }
+    .form-input-textbox-name,.form-input-textbox-email,.form-input-textbox-phone,.form-input-textbox-comment {
+        box-sizing: border-box;
+        border-radius: 0;
+        width:300px;
+        height:45px;
+        padding:20px;
+        font-family: 'Microsoft Sans Serif',sans-serif;
+        font-size:15px;
+        color:#333;
+        background-color: #F3F1E4;
+        border: 1px solid #5e5d5d;
+        box-shadow:none;
+        outline:none;
+    }
+    .form-input-textbox-comment {
+        height:100px;
+    }
+    .form-button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,125 @@
+.body {
+    font-family: 'Microsoft Sans Serif' ,sans-serif;
+}
+.body h1{
+    color:white;
+}
+.main-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* border: solid 1px; */
+   
+
+}
+/* .slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+} */
+/* .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: auto;
+} */
+/* .slide.active {display: block;} */
+.images {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+
+}
+.text-on-image{
+    margin-left:50px;
+    /* width: 561px; */
+    position: absolute;
+    top: 30%;
+    left:10%;
+    /* transform: translate(-50%); */
+    color:  #ffffff;
+    text-align:left;
+    padding: 20px;
+    border-radius:8px;
+    max-width: 400px;
+    font-size: 24px;
+    z-index: 1;
+}
+.shop-now-button{
+    background-color: white;
+    color: #622B1E;
+    padding: 25px 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.shop-now-button:hover {
+    background-color: #622B1E;
+    color: #F3F1E4;
+}
+/* .navigation-dots {
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    display:flex;
+    gap: 10px;
+}
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #C0BDAC80;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dot.active {background-color: #9D4935;}
+.dot:hover {background-color: #999;} */
+/* .swiper-button-prev , .swiper-button-next {
+    z-index: 99;
+    cursor: pointer;
+}
+.swiper-button-prev::after , .swiper-button-next::after {
+    color:#ffffff;
+    font-size: 20px;
+} */
+@media (max-width: 768px){
+    .main-container {
+        height: auto;
+    }
+    .images {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .text-on-image {
+        width: 90%;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .shop-now-button {
+        padding:15px;
+        font-size:16px;
+    }
+}

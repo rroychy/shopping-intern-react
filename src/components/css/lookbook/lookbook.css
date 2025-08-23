@@ -1,0 +1,181 @@
+.container-lookbook {
+    /* box-sizing: border-box ;
+    max-width: 1024px; */
+    width:auto;
+    padding :20px 200px 20px 200px;
+
+    /* margin:20px 0 20px 0; */
+    /* overflow-wrap: break-word; */
+    background-color: #F3F1E4;
+}
+.title-part-category{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display:flex;
+    /* flex-direction: column; */
+    justify-content:space-between ;
+}
+.title{
+        text-align: left;
+        font-family: 'Microsoft Sans Serif',sans-serif;
+        font-size: 48px;
+        color:#622B1E;
+        align-content: center;
+    }
+.title h1{
+        font-size: 38px;
+        color:#c3c0ad;
+        padding: 0PX;
+    }
+.title p{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+.image-beside-title{
+        /* justify-content: flex-end; */
+        align-content: flex-end;
+        width:80%;
+        height:411.1px;
+        border-radius: 0;
+        /* margin-right: 200px; */
+    }
+.image-big{
+        display: flex;
+        flex:0 1 40%;
+        justify-content: space-between;
+        width: 547.5px; 
+        height: auto;
+        cursor:pointer;
+        border-radius: 0;
+    }
+.image-small{
+        display: flex;
+        margin-top: 160px;
+        max-width: 370.69px;
+        max-height: 400px;
+        border-radius: 0;
+    }
+.details{
+    display:block;
+    max-width: 370.69px;
+    max-height: 203.37px;
+    margin-top: 200px ;
+    font-family: 'Microsoft Sans Serif',sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+.product-title{
+        font-weight: 600px;
+    }
+.price{
+        font-weight: 500;
+    }
+.add-to-cart-button{
+        color:#622B1E;
+        margin: 5px 0 0 0 ;
+        /* margin-bottom: 20px; */
+        background-color: transparent;
+        padding:8px 16px;
+        cursor:pointer;
+        font-size: 1.1em;
+        transition: all 0.3s ease
+    }
+.category-products{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    gap:50px;
+}
+.type-b{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+@media (max-width:768px){
+    .container-lookbook{
+        padding:20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-part-category{
+        margin-bottom: 40px;
+        margin-top: 40px;
+        flex-direction: column;
+        /* justify-content:space-between ; */
+        align-items: flex-start;
+    }
+    .title{
+        text-align: left;
+        font-family: 'Microsoft Sans Serif',sans-serif;
+        font-size: 36px;
+        color:#622B1E;
+        /* align-content: flex-start; */
+    }
+    .title h1{
+        font-size: 38px;
+        color:#c3c0ad;
+        padding: 0PX;
+    }
+    .title p{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .image-beside-title{
+        /* justify-content: flex-end; */
+        /* align-content: flex-end; */
+        width:100%;
+        height:100%;
+        border-radius: 0;
+        /* margin-right: 200px; */
+    } 
+    .image-big,.image-small,.details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .image-big{
+        /* justify-content: space-between; */
+        /* width: 345px; 
+        height: 517.5px; */
+        width:100%;
+        height:100%;
+        cursor:pointer;
+        border-radius: 0;
+    }
+    .image-small{
+        margin-top: 0px;
+        width: 100%;
+        height: 389.03px;
+        border-radius: 0;
+        padding: 0 20px 0 20px;
+    }
+    .details{
+        width: 370.69px;
+        height: 203.37px;
+        margin: 0px ;
+        padding:0 20px 0 20px;
+        font-family: 'Microsoft Sans Serif',sans-serif;
+        font-size: 18px;
+    }
+    .product-title{
+        font-weight: 600px;
+        text-align: center;
+    }
+    .price{
+        font-weight: 500;
+    }
+    .category-products{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .type-b {
+        display: flex ;
+        flex-direction: column-reverse ;
+        gap:20px;
+    }
+}

@@ -1,0 +1,50 @@
+.svg-container {
+    display:flex;
+    align-items: center;
+    /* box-sizing: border-box; */
+
+}
+.svg-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 5vw;
+    background-color: #622B1E;
+}
+.svg-block {
+    flex-direction: column;
+    text-align: center;
+    flex:1 1 120px;
+    padding: 20px;
+    max-width: 200px;
+}
+.icon_1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display:block;
+}
+.icon_1-label {
+    font-size: 20px;
+    color: #ffffff;
+}
+.svg-divider {
+    width: 1px;
+    /* height: 172px; */
+    align-self: stretch;
+    background-color: #8B4636;
+}
+@media (max-width: 768px){
+    .svg-section{
+        padding: 0;
+        list-style: none;
+        column-gap:16px ;
+        row-gap: 24px;
+    }
+    .svg-divider {
+        visibility: hidden;
+    }
+    .icon_1-label {
+        font-size: clamp(14px,4vw,20px);
+    }
+}

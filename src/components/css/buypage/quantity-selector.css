@@ -1,0 +1,68 @@
+.body{
+    font-family: 'Crimson Text';
+}.quantity-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 150px; 
+}
+
+.quantity-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.quantity-counter {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f0f0e8;
+}
+
+.quantity-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.quantity-button:hover:not(:disabled) {
+    background-color: #e0e0d8;
+    color: #333;
+}
+
+.quantity-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.quantity-input {
+    width: 40px;
+    padding: 10px 0;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    background-color: #f0f0e8;
+}
+
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-input:focus {
+    outline: none; 
+}

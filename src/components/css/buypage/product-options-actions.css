@@ -1,0 +1,104 @@
+.body{
+    font-family: 'Crimson Text';
+    font-size: 20px;
+}
+.product-options-actions {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    padding: 20px 0;
+    max-width: 350px;
+}
+
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 5px; 
+}
+
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid #a0a0a0; 
+    border-radius: 3px; 
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.custom-checkbox:checked {
+    background-color: #8b5e3c; 
+    border-color: #8b5e3c;
+}
+
+
+.custom-checkbox:checked::before {
+    content: '';
+    display: block;
+    width: 6px; 
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg) ; 
+    position: absolute;
+    top: 45%;
+    left: 50%;}
+
+.checkbox-label {
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    line-height: 1.5; 
+}
+
+
+.action-button {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 8px; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-button {
+    width:100%;
+    background-color: #622B1E;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button:hover {
+    background-color: #4b2116; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.secondary-button {
+    background-color: transparent; 
+    border: 1px solid #8b5e3c; 
+    color: #8b5e3c; }
+
+.secondary-button:hover {
+    background-color: #f8f6f2; 
+    color: #622B1E; 
+    border-color: #622B1E;
+}
+
+.button-arrow-icon {
+    font-size: 0.9em; 
+    line-height: 1; 
+    transform: rotate(-45deg);
+    display: inline-block; 
+}
