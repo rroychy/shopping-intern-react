@@ -1,4 +1,4 @@
-# [SHOPPING WEBSITE]
+# SHOPPING WEBSITE
 
  **Live Demo:** [Click here](https://rajd-proj-shop-1.vercel.app/)
 
